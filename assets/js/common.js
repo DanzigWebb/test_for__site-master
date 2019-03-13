@@ -1,10 +1,10 @@
 // галерея на нативном js
 
 var photos = [
-    '/assets/img/pic-1.png',
-    '/assets/img/min-2.png',
-    '/assets/img/min-3.png',
-    '/assets/img/min-4.png',
+    'assets/img/pic-1.png',
+    'assets/img/min-2.png',
+    'assets/img/min-3.png',
+    'assets/img/min-4.png',
   ];
 
 
