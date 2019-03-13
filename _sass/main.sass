@@ -26,6 +26,8 @@ body
       border-color: green
 #my-page
   padding: 0 40px
+  .hamburger
+    padding: 15px 5px
   +media-breakpoint-down(xs)
     padding: 0
 .container
@@ -36,6 +38,7 @@ body
     padding-left: 65px
   +media-breakpoint-down(xs)
     padding-left: 10px
+    padding-right: 40px
 .img-responsive
   display: block
   max-width: 100%
@@ -70,11 +73,17 @@ b, strong
     position: absolute
     right: -13px
     top: 0
+    +media-breakpoint-down(xs)
+      right: 0
+      z-index: 1
 .page
   .bg-bot
     position: absolute
     right: -13px
     bottom: 0
+    +media-breakpoint-down(xs)
+      right: 0
+      z-index: 1
     
 .header-top
   align-items: center
@@ -264,7 +273,7 @@ b, strong
 .gallery
   padding: 10px
   border: 1px solid rgba(0,0,0,0.35)
-  margin-bottom: 30px
+  margin-bottom: 28px
   img
     width: 100%
   .full-photo
@@ -386,7 +395,8 @@ b, strong
   font-size: 15px
   line-height: 20px
   display: block
-  letter-spacing: 0.3px
+  letter-spacing: 0.2px
+  word-spacing: 1px
   margin-bottom: 5px
   margin-top: 3px
   color: #00aedb
@@ -396,6 +406,7 @@ b, strong
   font-weight: 400
   text-decoration: none
   color: #00aedb
+  word-spacing: 0
 
 .sidebar-post__txt
   line-height: 17px
@@ -417,7 +428,7 @@ b, strong
   display: flex
   margin-left: 4px
   border-bottom: none
-  margin-bottom: 0
+  margin-bottom: -2px
   img
     padding-right: 2px
     position: relative
